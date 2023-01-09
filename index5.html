@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function createCar(name, szybkosc) {
+    return {
+        name,
+        szybkosc,
+        miaucz() {
+            console.log('miaucz');
+        }    
+    };
+    }
+
+    let kot = createCar("error",9);
+
+    console.log("Imie kota: "+kot.name)
+    console.log("szybkość kota: "+kot["szybkosc"])
+
+    kot.miaucz();
+    kot["miaucz"]();
+    </script>
+</body>
+</html>

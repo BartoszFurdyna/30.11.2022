@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function car(name, szybkosc) {
+        this.name = name;
+        this.szybkosc = szybkosc;
+        this.miaucz = function() {
+            console.log('miaucz');
+        }
+    }
+
+    let kot = new car("error",9);
+
+    console.log("Imie kota: "+kot.name)
+    console.log("szybkość kota: "+kot["szybkosc"])
+
+    kot.miaucz();
+    kot["miaucz"]();
+    </script>
+</body>
+</html>
